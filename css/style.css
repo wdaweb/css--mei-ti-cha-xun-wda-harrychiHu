@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+  transition: 1s;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap{
+  max-width: 1000vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+hr{
+  width: 80%;
+}
+
+.container{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+.content .top{
+  text-align: center;
+  
+}
+.content .top h1{
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.content .bottom h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+}
+.content .bottom h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+.content .bottom p{
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.content .bottom{
+  width: 90%;
+}
+.content .bottom .title{
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .content{
+    width: 45%;
+  }
+}
+@media (min-width:1200px){
+  .big-screen{
+    position: absolute;
+  }
+  .wrap{
+  }
+  .container{
+    height: 70rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .content{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img{
+    width: 40%;
+  }
+  .content p{
+    display: none;
+  }
+  .content .bottom .title{
+    display: block;
+  }
+  .content .bottom h3{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  hr{
+    position: absolute;
+  }
+  .line-1{
+    width: 15%;
+    left: 30%;
+    top: 25%;
+    transform: rotate(35deg);
+  }
+  .line-2{
+    width: 10%;
+    left: 30%;
+    top: 45%;
+    transform: rotate(180deg);
+  }
+  .line-3{
+    width: 10%;
+    left: 30%;
+    top: 60%;
+    transform: rotate(145deg);
+  }
+  .line-4{
+    width: 15%;
+    left: 30%;
+    top: 70%;
+    transform: rotate(135deg);
+  }
+  .line-5{
+    width: 15%;
+    right: 30%;
+    top: 35%;
+    transform: rotate(155deg);
+  }
+  .line-6{
+    width: 10%;
+    right: 30%;
+    top: 45%;
+    transform: rotate(180deg);
+  }
+  .line-7{
+    width: 10%;
+    right: 30%;
+    top: 55%;
+    transform: rotate(215deg);
+  }
+  .line-ceter{
+    display: none;
+  }
+
+}
